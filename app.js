@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 require('./models/nftcontract')
 const Utils = require('./services/utils')
 const TrackContractDeployment = require('./services/contractDeploymentTracker')
-const healthcheck = require('../promenade-thumbnail-indexer/healthcheck')
+const healthcheck = require('./healthcheck')
 
 const NODEINDEX = parseInt(process.env.NODEINDEX)
 
