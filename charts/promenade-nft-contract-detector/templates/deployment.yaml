@@ -30,7 +30,7 @@ spec:
       volumes:
         - name: promenade-mongodb-secret
           secret:
-          secretName: promenade-mongodb-secret
+            secretName: promenade-mongodb-secret
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
